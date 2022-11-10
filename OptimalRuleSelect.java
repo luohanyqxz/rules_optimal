@@ -69,7 +69,7 @@ public class OptimalRuleSelect {
     public Result optimalAlgo(int callCondition, int blkCondition) {
         Collections.sort(rules);
         int ruleCnt = rules.size();
-        int dp[][] = new int[callCondition][blkCondition];
+        int dp[][] = new int[ruleCnt][callCondition];
         int userCnt = sumCallUserCnt(rules);
         //initial
         for (int i = 0; i < rules.size(); i++) {
